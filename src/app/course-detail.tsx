@@ -312,10 +312,10 @@ export function CourseDetail() {
 						</Card>
 					</main>
 
-					<aside className="w-full lg:w-3/12 lg:sticky lg:h-screen lg:right-5 lg:-my-[10rem] lg:mx-[5rem] lg:top-0">
+					<aside className="w-full lg:w-3/12 lg:sticky lg:h-screen lg:right-5 lg:-my-[10rem] lg:mx-[5rem] lg:top-0 mb-2">
 						<Card
 							shadow={false}
-							className="border-solid border-2 h-auto border-purple-500"
+							className="border-solid border-2 h-auto lg:border-purple-500"
 						>
 							<CardBody>
 								<figure className="relative h-48 w-full mb-2 flex items-center justify-center">
@@ -326,7 +326,7 @@ export function CourseDetail() {
 									</div>
 
 									<Image
-										className="h-full w-full rounded-xl"
+										className="h-full w-full rounded-xl object-cover object-center"
 										width={300}
 										height={200}
 										src="/image/video-01.jpg"
@@ -363,7 +363,7 @@ export function CourseDetail() {
 								<div className="max-w-md mx-auto">
 									<ul className="divide-y divide-gray-300">
 										<li className="py-1 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
+											<span className="text-left  text-blue-gray-600">
 												Başlangıç Tarihi
 											</span>
 											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
@@ -371,77 +371,19 @@ export function CourseDetail() {
 											</span>
 										</li>
 										<li className="py-1 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Süre
-											</span>
+											<span className="text-left text-blue-gray-600">Süre</span>
 											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
 												60 saat
 											</span>
 										</li>
 										<li className="py-1 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
+											<span className="text-left text-blue-gray-600">
 												Seviye
 											</span>
 											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
 												Başlangıç
 											</span>
 										</li>
-										<li className="py-1 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Katılım Sertifikası
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Var
-											</span>
-										</li>
-										<li className="py-1 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Başarı Sertifika
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												%80 Başarı
-											</span>
-										</li>
-										{/* <li className="py-3 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Mülakat ve CV Teknikleri Eğitimi
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Ücretsiz
-											</span>
-										</li>
-										<li className="py-3 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Teknik İngilizce
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Ücretsiz
-											</span>
-										</li>
-										<li className="py-3 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Mentör Desteği
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Ücretsiz
-											</span>
-										</li>
-										<li className="py-3 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Git & Github Eğitimi
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Ücretsiz
-											</span>
-										</li>
-										<li className="py-3 flex items-center justify-between">
-											<span className="text-left font-bold text-gray-600">
-												Webiner Katılım Kuponu
-											</span>
-											<span className="text-right px-2 py-1 bg-gray-300 text-gray rounded text-xs">
-												Ücretsiz
-											</span>
-										</li> */}
 									</ul>
 								</div>
 							</CardBody>
@@ -449,20 +391,6 @@ export function CourseDetail() {
 					</aside>
 				</div>
 			</div>
-
-			<ScrollLink
-				className="fixed bottom-20 right-5"
-				to="tab"
-				smooth
-				duration={500}
-			>
-				<IconButton
-					className="
-rounded bg-indigo-500 hover:shadow-[#1DA1F2]/20 focus:shadow-[#1DA1F2]/20 active:shadow-[#1DA1F2]/10"
-				>
-					<i className="fa fa-home text-lg" />
-				</IconButton>
-			</ScrollLink>
 		</>
 	);
 }
