@@ -1,0 +1,45 @@
+ .play-button {
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+      position: absolute;
+      background-color: white;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 15px solid #2f57ef;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .play-icon::after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 40px solid rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .play-button:hover .play-icon {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .play-button:hover .play-icon::after {
+      border-left-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .play-view-text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
