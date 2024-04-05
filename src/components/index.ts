@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
-export * from "./navbar";
-export * from "./footer";
-export * from "./layout";
-export * from "./stats-card";
-export * from "./feedback-card";
-export * from "./category-card";
-export * from "./course-card";
-export * from "./event-card";
-export * from "./footer";
-export * from "./fixed-plugin";
+export * from './layout/navbar';
+export * from './layout/footer';
+export * from '../layouts/root-layout';
+export * from './home/stats-card';
+export * from './home/feedback-card';
+export * from './course/category-card';
+export * from './course/course-card';
+export * from './events/event-card';
+export * from './layout/footer';

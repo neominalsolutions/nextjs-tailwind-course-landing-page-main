@@ -1,13 +1,15 @@
 import './globals.css';
+
+import 'swiper/scss';
+import 'swiper/scss/a11y';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+
+import { ComplexNavbar, FooterWithSitemap, MainLayout } from '@/components';
+import { ScrollUp } from '@/components/layout/scroll-up';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import {
-	Layout,
-	FixedPlugin,
-	ComplexNavbar,
-	FooterWithSitemap,
-} from '@/components';
-import { ScrollUp } from '@/components/scroll-up';
+import { usePathname } from 'next/navigation';
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -36,13 +38,8 @@ export default function RootLayout({
 				></script>
 				<link rel="shortcut icon" href="/favicon.png" type="image/png" />
 			</head>
-			<body className={roboto.className}>
-				<Layout>
-					<ComplexNavbar />
-					{children}
-					<ScrollUp />
-					<FooterWithSitemap />
-				</Layout>
+			<body className={`${roboto.className} max-w-full`}>
+				<MainLayout>{children}</MainLayout>
 			</body>
 		</html>
 	);

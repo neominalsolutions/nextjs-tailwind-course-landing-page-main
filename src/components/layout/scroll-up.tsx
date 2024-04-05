@@ -15,7 +15,7 @@ export function ScrollUp() {
 			>
 				<IconButton
 					className="
-rounded bg-indigo-500 hover:shadow-[#1DA1F2]/20 focus:shadow-[#1DA1F2]/20 active:shadow-[#1DA1F2]/10 opacity-80"
+rounded bg-indigo-800 hover:shadow-[#1DA1F2]/20 focus:shadow-[#1DA1F2]/20 active:shadow-[#1DA1F2]/10 opacity-80"
 				>
 					<ChevronUpIcon className="h-6 w-6" />
 				</IconButton>

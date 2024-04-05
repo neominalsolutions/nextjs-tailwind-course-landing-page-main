@@ -10,7 +10,7 @@ import {
 	HeartIcon,
 } from '@heroicons/react/24/solid';
 
-import CategoryCard from '@/components/category-card';
+import CategoryCard from '@/components/course/category-card';
 
 const CATEGORIES = [
 	{

@@ -64,7 +64,7 @@ function ProfileMenu() {
 			<MenuHandler>
 				<Button
 					variant="text"
-					color="blue-gray"
+					color="indigo"
 					className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
 				>
 					<Avatar
@@ -103,7 +103,7 @@ function ProfileMenu() {
 								as="span"
 								variant="small"
 								className="font-normal"
-								color={isLastItem ? 'red' : 'inherit'}
+								color={isLastItem ? 'red' : 'indigo'}
 							>
 								{label}
 							</Typography>
@@ -155,8 +155,8 @@ function NavListMenu() {
 			<Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
 				<MenuHandler>
 					<Typography as="a" href="#" variant="small" className="font-normal">
-						<MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
-							<AcademicCapIcon className="h-[18px] w-[18px] text-blue-gray-500" />{' '}
+						<MenuItem className="hidden items-center gap-2 font-medium text-indigo-800 lg:flex lg:rounded-full">
+							<AcademicCapIcon className="h-[18px] w-[18px] text-indigo-600" />{' '}
 							Eğitimler{' '}
 							<ChevronDownIcon
 								strokeWidth={2}
@@ -219,11 +219,11 @@ function NavList() {
 					href="#"
 					variant="small"
 					color="gray"
-					className="font-medium text-blue-gray-500"
+					className="font-medium text-indigo-600"
 				>
 					<MenuItem className="flex items-center gap-2 lg:rounded-full">
 						{React.createElement(icon, { className: 'h-[18px] w-[18px]' })}{' '}
-						<span className="text-gray-900"> {label}</span>
+						<span className="text-indigo-800"> {label}</span>
 					</MenuItem>
 				</Typography>
 			))}
@@ -244,37 +244,42 @@ export function ComplexNavbar() {
 	}, []);
 
 	return (
-		<Navbar id="navbar" className="mx-auto rounded-none">
-			<div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
-				<Typography
-					as="a"
-					href="#"
-					className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
-				>
-					Material Tailwind
-				</Typography>
-				<div className="hidden lg:block">
-					<NavList />
+		<div>
+			<Navbar
+				id="navbar"
+				className="max-w-full mx-auto rounded-none bg-white py-4 text-indigo-800"
+			>
+				<div className="relative mx-auto flex items-center justify-between text-indigo-800">
+					<Typography
+						as="a"
+						href="#"
+						className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
+					>
+						Material Tailwind
+					</Typography>
+					<div className="hidden lg:block">
+						<NavList />
+					</div>
+					<IconButton
+						size="sm"
+						color="blue-gray"
+						variant="text"
+						onClick={toggleIsNavOpen}
+						className="ml-auto mr-2 lg:hidden"
+					>
+						<Bars2Icon className="h-6 w-6" />
+					</IconButton>
+
+					<ProfileMenu />
+
+					<Button size="sm" variant="text">
+						<span className="text-indigo-800">Log In</span>
+					</Button>
 				</div>
-				<IconButton
-					size="sm"
-					color="blue-gray"
-					variant="text"
-					onClick={toggleIsNavOpen}
-					className="ml-auto mr-2 lg:hidden"
-				>
-					<Bars2Icon className="h-6 w-6" />
-				</IconButton>
-
-				<ProfileMenu />
-
-				<Button size="sm" variant="text">
-					<span>Log In</span>
-				</Button>
-			</div>
-			<MobileNav open={isNavOpen} className="overflow-scroll">
-				<NavList />
-			</MobileNav>
-		</Navbar>
+				<MobileNav open={isNavOpen} className="overflow-scroll">
+					<NavList />
+				</MobileNav>
+			</Navbar>
+		</div>
 	);
 }

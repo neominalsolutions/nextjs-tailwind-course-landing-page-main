@@ -1,12 +1,7 @@
-
-export * from "./out-impressive-stats";
-export * from "./hero";
-export * from "./layout";
-export * from "./page";
-export * from "./students-feedback";
-export * from "./explore-courses";
-export * from "./testimonial";
-export * from "./courses-categories";
-export * from "./events";
-
-
+export * from '../components/course/courses-categories';
+export * from '../components/events/events';
+export * from '../components/out-impressive-stats';
+export * from '../components/home/students-feedback';
+export * from '../components/testimonial';
+export * from './layout';
+export * from './page';
