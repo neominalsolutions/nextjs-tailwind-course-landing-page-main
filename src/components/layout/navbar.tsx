@@ -30,6 +30,13 @@ import {
 	PhoneIcon,
 } from '@heroicons/react/24/solid';
 
+import logo from '../../../public/image/logo/logo-org.png';
+import course from '../../../public/image/Ozan Kebap.gif';
+
+import Image from 'next/image';
+
+console.log('logo', logo.src);
+
 // profile menu component
 const profileMenuItems = [
 	{
@@ -71,7 +78,7 @@ function ProfileMenu() {
 						variant="circular"
 						size="sm"
 						alt="tania andrew"
-						className="border border-gray-900 p-0.5"
+						className="border-gray-900 p-0.5"
 						src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
 					/>
 					<ChevronDownIcon
@@ -156,7 +163,7 @@ function NavListMenu() {
 				<MenuHandler>
 					<Typography as="a" href="#" variant="small" className="font-normal">
 						<MenuItem className="hidden items-center gap-2 font-medium text-indigo-800 lg:flex lg:rounded-full">
-							<AcademicCapIcon className="h-[18px] w-[18px] text-indigo-600" />{' '}
+							<AcademicCapIcon className="h-[18px] w-[18px] text-#148bcb" />{' '}
 							Eğitimler{' '}
 							<ChevronDownIcon
 								strokeWidth={2}
@@ -167,16 +174,25 @@ function NavListMenu() {
 						</MenuItem>
 					</Typography>
 				</MenuHandler>
-				<MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
+				<MenuList className="hidden w-[36rem] grid-cols-8 gap-3 overflow-visible lg:grid border-none outline-none">
 					<Card
-						color="blue"
+						color="white"
 						shadow={false}
 						variant="gradient"
-						className="col-span-3 grid h-full w-full place-items-center rounded-md"
+						className="col-span-4 grid h-full w-full place-items-center rounded-md outline-none"
 					>
-						<RocketLaunchIcon strokeWidth={1} className="h-28 w-28" />
+						<Image
+							className="h-96 w-96 "
+							src={course.src}
+							alt="logo"
+							height={25}
+							width={150}
+						/>
+
+						{/* <Image src={course.src} heig />
+						<RocketLaunchIcon strokeWidth={1} className="h-28 w-28" /> */}
 					</Card>
-					<ul className="col-span-4 flex w-full flex-col gap-1">
+					<ul className="col-span-4 border-none flex w-full flex-col gap-1 outline-none">
 						{renderItems}
 					</ul>
 				</MenuList>
@@ -210,8 +226,19 @@ const navListItems = [
 
 function NavList() {
 	return (
-		<ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+		<ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center justify-center">
+			<div className="self-center mr-2">
+				<Image
+					className="self-center"
+					src={logo.src}
+					alt="logo"
+					height={25}
+					width={150}
+				/>
+			</div>
+
 			<NavListMenu />
+
 			{navListItems.map(({ label, icon }, key) => (
 				<Typography
 					key={label}
@@ -247,16 +274,9 @@ export function ComplexNavbar() {
 		<div>
 			<Navbar
 				id="navbar"
-				className="max-w-full mx-auto rounded-none bg-white py-4 text-indigo-800"
+				className="max-w-full mx-auto rounded-none bg-white text-indigo-800"
 			>
 				<div className="relative mx-auto flex items-center justify-between text-indigo-800">
-					<Typography
-						as="a"
-						href="#"
-						className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
-					>
-						Material Tailwind
-					</Typography>
 					<div className="hidden lg:block">
 						<NavList />
 					</div>

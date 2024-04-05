@@ -56,7 +56,7 @@ export function CoursesCategories() {
 					color="gray"
 					className="relative grid h-full w-full place-items-center overflow-hidden text-center"
 				>
-					<div className="absolute inset-0 h-full w-full bg-gray-900/75" />
+					<div className="absolute inset-0 h-full w-full bg-indigo-600" />
 					<CardBody className="relative w-full">
 						<Typography color="white" className="text-xs font-bold opacity-50">
 							HTML, CSS & Javascript
