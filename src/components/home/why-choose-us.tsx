@@ -49,11 +49,11 @@ export function WhyChooseUs() {
 				variant="lead"
 				className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
 			>
-				<blockquote className="my-4 rounded-lg border-l-4 border-indigo-600 bg-indigo-100 p-4 italic text-black shadow-lg">
+				<div className="my-4 rounded-lg border-l-4 border-indigo-600 bg-indigo-100 p-4 italic text-black shadow-lg">
 					<p className="text-lg font-semibold">
 						&quot;Yeteneklerini geliştir, standartlarını değiştir.&quot;
 					</p>
-				</blockquote>
+				</div>
 			</Typography>
 			<div className="mt-8">
 				<div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">

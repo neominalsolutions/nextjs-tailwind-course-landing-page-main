@@ -75,7 +75,55 @@ export function CoursesCategories() {
 						</Button>
 					</CardBody>
 				</Card>
-				<div className="col-span-1 flex flex-col gap-6">
+
+				<Card
+					color="gray"
+					className="relative grid h-full w-full place-items-center overflow-hidden text-center"
+				>
+					<div className="absolute inset-0 h-full w-full bg-indigo-600" />
+					<CardBody className="relative w-full">
+						<Typography color="white" className="text-xs font-bold opacity-50">
+							HTML, CSS & Javascript
+						</Typography>
+						<Typography variant="h4" className="mt-9" color="white">
+							Web Development Intro
+						</Typography>
+						<Typography
+							color="white"
+							className="mt-4 mb-14 font-normal opacity-50"
+						>
+							Ready to start your web development journey?
+						</Typography>
+						<Button size="sm" color="white">
+							Enroll Now
+						</Button>
+					</CardBody>
+				</Card>
+
+				<Card
+					color="gray"
+					className="relative grid h-full w-full place-items-center overflow-hidden text-center"
+				>
+					<div className="absolute inset-0 h-full w-full bg-indigo-600" />
+					<CardBody className="relative w-full">
+						<Typography color="white" className="text-xs font-bold opacity-50">
+							HTML, CSS & Javascript
+						</Typography>
+						<Typography variant="h4" className="mt-9" color="white">
+							Web Development Intro
+						</Typography>
+						<Typography
+							color="white"
+							className="mt-4 mb-14 font-normal opacity-50"
+						>
+							Ready to start your web development journey?
+						</Typography>
+						<Button size="sm" color="white">
+							Enroll Now
+						</Button>
+					</CardBody>
+				</Card>
+				{/* <div className="col-span-1 flex flex-col gap-6">
 					{CATEGORIES.slice(0, 2).map((props, key) => (
 						<CategoryCard key={key} {...props} />
 					))}
@@ -84,7 +132,7 @@ export function CoursesCategories() {
 					{CATEGORIES.slice(2, 4).map((props, key) => (
 						<CategoryCard key={key} {...props} />
 					))}
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

@@ -1,5 +1,6 @@
 'use client';
 
+import StudentsFeedback from '@/components/home/students-feedback';
 import styles from './page.module.css';
 
 import {
@@ -15,6 +16,7 @@ import {
 import Image from 'next/image';
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import Faq from '@/components/home/faq';
 
 export default function CourseDetailPage() {
 	const [open, setOpen] = React.useState(1);
@@ -276,6 +278,10 @@ export default function CourseDetailPage() {
 								</div>
 							</CardBody>
 						</Card>
+
+						<div className="max-w-screen-3xl bg-white border border-indigo-100 mb-4">
+							<Faq />
+						</div>
 					</main>
 
 					<aside className="w-full lg:w-3/12 lg:sticky lg:h-screen lg:right-5 lg:-my-[10rem] lg:mx-[5rem] lg:top-0 mb-2">

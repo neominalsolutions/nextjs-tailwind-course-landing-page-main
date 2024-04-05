@@ -24,7 +24,7 @@ const currentYear = new Date().getFullYear();
 export function FooterWithSitemap() {
 	return (
 		<footer>
-			<div className="sticky bottom-0 bg-indigo-50 py-4 text-gray-800">
+			<div className="sticky bottom-0 bg-indigo-700 py-4 text-white">
 				<div className="container px-4 mx-auto">
 					<div className="-mx-4 flex flex-wrap justify-between">
 						<div className="px-4 my-4 w-full xl:w-1/5">
@@ -36,30 +36,8 @@ export function FooterWithSitemap() {
 								>
 									<g fill="none" fill-rule="evenodd">
 										<g transform="translate(0 -75)">
-											<g transform="translate(0 75)">
-												<rect
-													width="512"
-													height="512"
-													rx="128"
-													fill="#3D5AFE"
-												></rect>
-												<rect
-													x="149"
-													y="176"
-													width="220"
-													height="220"
-													fill="#fff"
-												></rect>
-												<circle cx="259" cy="156" r="40" fill="#fff"></circle>
-												<circle
-													cx="369"
-													cy="286"
-													r="40"
-													fill="#2962FF"
-												></circle>
-											</g>
 											<text
-												fill="black"
+												fill="white"
 												font-family="Nunito-Bold, Nunito"
 												font-size="512"
 												font-weight="bold"
@@ -69,7 +47,7 @@ export function FooterWithSitemap() {
 												</tspan>
 											</text>
 											<text
-												fill="#1e88e5"
+												fill="#0ea5e9"
 												font-family="Nunito-Bold, Nunito"
 												font-size="512"
 												font-weight="bold"
@@ -92,7 +70,7 @@ export function FooterWithSitemap() {
 
 						<div className="px-4 my-4 w-full sm:w-auto">
 							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">
+								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-indigo-200">
 									Company
 								</h2>
 							</div>
@@ -121,7 +99,7 @@ export function FooterWithSitemap() {
 						</div>
 						<div className="px-4 my-4 w-full sm:w-auto">
 							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">
+								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-indigo-200">
 									Blog
 								</h2>
 							</div>
@@ -155,13 +133,13 @@ export function FooterWithSitemap() {
 						</div>
 						<div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
 							<div>
-								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-blue-600">
+								<h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-indigo-200">
 									Connect With Us
 								</h2>
 							</div>
 							<a
 								href="#"
-								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-purple-400 hover:border-purple-400"
+								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-indigo-200 hover:border-indigo-200"
 							>
 								<svg
 									className="w-4 h-4 fill-current"
@@ -173,7 +151,7 @@ export function FooterWithSitemap() {
 							</a>
 							<a
 								href="#"
-								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-purple-400 hover:border-purple-400"
+								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-indigo-200 hover:border-indigo-200"
 							>
 								<svg
 									className="w-4 h-4 fill-current"
@@ -185,7 +163,7 @@ export function FooterWithSitemap() {
 							</a>
 							<a
 								href="#"
-								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-purple-400 hover:border-purple-400"
+								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-indigo-200 hover:border-indigo-200"
 							>
 								<svg
 									className="w-4 h-4 fill-current"
@@ -197,7 +175,7 @@ export function FooterWithSitemap() {
 							</a>
 							<a
 								href="#"
-								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-purple-400 hover:border-purple-400"
+								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full mr-1 hover:text-indigo-200 hover:border-indigo-200"
 							>
 								<svg
 									className="w-4 h-4 fill-current"
@@ -209,7 +187,7 @@ export function FooterWithSitemap() {
 							</a>
 							<a
 								href="#"
-								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full hover:text-purple-400 hover:border-purple-400"
+								className="inline-flex items-center justify-center h-8 w-8 border border-gray-100 rounded-full hover:text-indigo-200 hover:border-indigo-200"
 							>
 								<svg
 									className="w-4 h-4 fill-current"
@@ -223,7 +201,7 @@ export function FooterWithSitemap() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-indigo-50 py-4 text-gray-800 border-t border-gray-400">
+			<div className="bg-indigo-700 py-4 text-white border-t border-gray-400">
 				<div className="container mx-auto px-4">
 					<div className="-mx-4 flex flex-wrap justify-between">
 						<div className="px-8 w-full text-center sm:w-auto sm:text-left">

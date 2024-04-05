@@ -15,7 +15,7 @@ import {
 import { Button, Typography, Card } from '@material-tailwind/react';
 import { useRef } from 'react';
 
-function Hero2() {
+function Slider() {
 	const progressCircle = useRef<any>(null);
 	const progressContent = useRef<any>(null);
 	const onAutoplayTimeLeft = (s: any, time: number, progress: number) => {
@@ -154,4 +154,4 @@ function Hero2() {
 		</Swiper>
 	);
 }
-export default Hero2;
+export default Slider;
